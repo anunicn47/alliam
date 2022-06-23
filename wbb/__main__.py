@@ -118,7 +118,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
                 text="Commands ❓", callback_data="bot_commands"
             ),
             InlineKeyboardButton(
-                text="💖Owner💖",
+                text="Owner 💖",
                 url="t.me/kkara9009",
             ),
         ],
@@ -154,7 +154,7 @@ keyboard = InlineKeyboardMarkup(
                 url=f"t.me/{BOT_USERNAME}?start=help",
             ),
             InlineKeyboardButton(
-                text="💖 Owner 💖",
+                text="Owner 💖",
                 url="t.me/kkara9009",
             ),
         ],
