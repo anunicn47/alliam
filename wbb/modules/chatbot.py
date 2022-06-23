@@ -80,7 +80,7 @@ async def chatbot_status(_, message: Message):
 
 
 async def lunaQuery(query: str, user_id: int):
-    luna = await arq.luna(query, user_id)
+    Aelly = await arq.luna(query, user_id)
     return luna.result
 
 
