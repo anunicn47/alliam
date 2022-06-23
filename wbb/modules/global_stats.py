@@ -101,16 +101,6 @@ async def global_stats(_, message):
     _karmas = await get_karmas_count()
     karmas_count = _karmas["karmas_count"]
     karmas_chats_count = _karmas["chats_count"]
-
-    # Contributors/Developers count and commits on github
-    url = "https://api.github.com/repos/thehamkercat/williambutcherbot/contributors"
-    rurl = "https://github.com/thehamkercat/williambutcherbot"
-    developers = await get(url)
-    commits = 0
-    for developer in developers:
-        commits += developer["contributions"]
-    developers = len(developers)
-
     # Rss feeds
     rss_count = await get_rss_feeds_count()
     # Modules info
